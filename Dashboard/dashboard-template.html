@@ -11,10 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="css/sb-admin.min.css">
 		
 	</head>
-	<body class="bg-dark" id="page-top">
+	<body class="bg-dark fixed-nav sticky-footer" id="page-top">
 
 		<!-- Navegation -->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
 			<a class="navbar-brand" href="index.html">Admin Study</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarStudy" aria-control="navbarStudy" aria-expanded="false" aria-label="Toggler Navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -53,8 +53,53 @@
 						</a>
 					</li>					
 				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<form class="form-inline my-2 my-lg-0 mr-lg-2">
+							<div class="input-group">
+								<input type="text" class="form-control" name="searchBar" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn btn-kight" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div>							
+						</form>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-sign-out">Logout</i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
+
+		<div class="content-wrapper">
+			<div class="container-fluid">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="breadcrumb-item">
+						White Page
+					</li>
+				</ol>
+				<div class="row">
+					<div class="col-12">
+						<h1>Title</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>			
+			<footer class="sticky-footer">
+				<div class="container">
+					<div class="text-center">
+						<small>Copyright Major John 2019</small>
+					</div>
+				</div>
+			</footer>
+		</div>
 
 		<script src="bibliotecas/jquery/jquery.min.js"></script>
 		<script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
