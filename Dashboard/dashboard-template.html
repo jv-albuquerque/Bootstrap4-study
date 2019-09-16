@@ -20,7 +20,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div id="navbarStudy" class="collapse navbar-collapse">
-				<ul class="navbar-nav navbar-sidenav">
+				<ul class="navbar-nav navbar-sidenav" id="linksAccordion">
 					<li class="nav-item">
 						<a class="nav-link" href="#">
 							<i class="fa fa-fw fa-dashboard"></i>
@@ -34,16 +34,52 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link nav-link-collapse collapse" href="#componentsLinks" data-toggle="collapse" data-parent="#linksAccordion">
 							<i class="fa fa-fw fa-wrench"></i>
 							<span class="nav-link-text">Components</span>
 						</a>
+						<ul class="sidenav-second-level collapse" id="componentsLinks">
+							<li>
+								<a href="login.html">Login</a>
+							</li>
+							<li>
+								<a href="recover-password.html">Recover Passwoer</a>
+							</li>
+							<li>
+								<a href="sign-up.html">Sing Up</a>
+							</li>
+							<li>
+								<a href="#links3Level" class="nav-link-collapse collapse" data-toggle="collapse">3 levels Links</a>
+								<ul class="sidenav-third-level collapse" id="links3Level">
+									<li>
+										<a href="#">Link 1</a>
+									</li>
+									<li>
+										<a href="#">Link 2</a>
+									</li>
+									<li>
+										<a href="#">Link 3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link nav-link-collapse collapse" href="#pagesLinks" data-toggle="collapse" data-parent="#linksAccordion">
 							<i class="fa fa-fw fa-file"></i>
 							<span class="nav-link-text">Pages</span>
 						</a>
+						<ul class="sidenav-second-level collapse" id="pagesLinks">
+							<li>
+								<a href="login.html">Login</a>
+							</li>
+							<li>
+								<a href="recover-password.html">Recover Passwoer</a>
+							</li>
+							<li>
+								<a href="sign-up.html">Sing Up</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="navbar-nav sidenav-toggler">
@@ -68,7 +104,7 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">
-							<i class="fa fa-sign-out">Logout</i>
+							<i class="fa fa-sign-out">Log Out</i>
 						</a>
 					</li>
 				</ul>
